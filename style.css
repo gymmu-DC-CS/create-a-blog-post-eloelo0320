@@ -6,6 +6,15 @@
 
 body {
   margin: 0;
-  background-color: lightgray;
+ text-align: center;
   font-family: sans-serif;
+}
+
+h2{
+  background-color: cyan;
+  align-self: center;
+  text-align: center;
+  padding: 1px;
+  display: inline-block;
+
 }
