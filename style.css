@@ -1,5 +1,8 @@
 a:link { text-decoration: none; }
 a:link { color: black;}
+a:link, a:visited{
+  color: black;
+}
 
 *,
 *::before,
@@ -15,27 +18,41 @@ a:link { color: black;}
 }
 
 body {
+  background-color: rgb(167, 247, 247);
   margin: 0;
   color: black;
- text-align: center;
+  text-align: center;
   font-family: sans-serif;
 }
-
+P{
+  font-size: 20px;
+}
 
 
 .links a{
+  transition-duration: 0.4s;
+
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-decoration: none;
   display: none;
   margin: 10px;
-  background-color: cyan;
+  border-width: 2px;
+  border-color: red;
+  border-style: groove;
   align-self: center;
   text-align: center;
   padding: 1px;
+  font-size: 30px; 
   display: inline-block;
 }
+
+.links a:hover{
+  background-color: red;
+}
+
 h1{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  size: 200px;
+  font-size: 80px;
    -webkit-text-stroke: 2px black;
   animation-name: title;
   animation-duration: 7s;
