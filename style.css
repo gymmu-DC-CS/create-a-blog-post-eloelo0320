@@ -34,6 +34,15 @@ body {
   text-align: center;
   font-family: sans-serif;
 }
+
+h2{
+  font-size: 40px;
+  font-weight: bolder;
+  -webkit-text-stroke: 3px black;
+  text-shadow: 10px;
+  color: rgb(167, 247, 247);
+}
+
 P{
   margin-left: 11%;
   margin-right: 11%;
@@ -112,5 +121,11 @@ align-self: auto;}
   animation-name: growing;
   animation-duration: 3s;
   animation-iteration-count: infinite;
+ }
+
+ #poker{
+  display:block;
+  margin-left: 70%;
+  font-size: 20px;
  }
 
