@@ -17,6 +17,13 @@ a:link, a:visited{
   100% {color: red;}
 }
 
+@keyframes pokerface {
+  0% {color: rgb(255, 0, 166);}
+  30% {color: rgb(159, 0, 159);}
+  70% {color: rgb(161, 140, 255);}
+  100% {color: rgb(255, 0, 174);}
+}
+
 @keyframes spin {
   0% {transform: rotate(0deg)}
   100% {transform: rotate(360deg);}
@@ -123,9 +130,20 @@ align-self: auto;}
   animation-iteration-count: infinite;
  }
 
- #poker{
+ #poker a{
+  font-weight: bold;
+  border-width: 3px;
+  border-color: black;
+  border-style: groove;
   display:block;
   margin-left: 70%;
-  font-size: 20px;
+  font-size: 26px;
+  -webkit-text-stroke: 0.6px black;
+  animation-name: pokerface;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  position: absolute;
  }
-
+#poker a:hover{
+  background-color: black;
+}
